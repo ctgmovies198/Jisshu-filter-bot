@@ -26,54 +26,11 @@
         <script src="https://cdn.plyr.io/3.6.12/plyr.js"></script>
       </div>
       
-      <div class="d-flex justify-content-between mb-2 flex-wrap gap-2">
-        <a onclick="mx_player()" class="btn btn-primary flex-fill" style="border: none; background-color: {{ jisshu_colours.mx_player.background }}; color: {{ jisshu_colours.mx_player.color }};">
-          <i class="fa fa-play"></i> <b>MX Player</b>
-        </a>
-        <a onclick="vlc_player()" class="btn btn-primary flex-fill" style="border: none; background-color: {{ jisshu_colours.vlc_player.background }}; color: {{ jisshu_colours.vlc_player.color }};">
-          <i class="fa fa-play"></i> <b>VLC Player</b>
-        </a>
-        <a onclick="playit_player()" class="btn btn-primary flex-fill" style="border: none; background-color: {{ jisshu_colours.playit_player.background }}; color: {{ jisshu_colours.playit_player.color }};">
-          <i class="fa fa-play"></i> <b>Play it</b>
-        </a>
-      </div>
-      
       <div class="row g-3 mb-2">
         <div class="col-md-6">
-          <a onclick="streamDownload()" class="btn btn-success w-100" style="border: none; background-color: {{ jisshu_colours.download.background }}; color: {{ jisshu_colours.download.color }};">
+          <a onclick="streDownload()" class="btn btn-success w-100" style="border: none; background-color: {{ jisshu_colours.download.background }}; color: {{ jisshu_colours.download.color }};">
             <i class="fa-solid fa-download me-2"></i> Download
-          </a>
-        </div>
-      </div>
-      
-      <a id="demo4" onclick="showLinkModal('{{tg_button}}')" class="btn btn-warning w-100 mb-2" style="border: none; background-color: {{ jisshu_colours.create_link.background }}; color: {{ jisshu_colours.create_link.color }};">
-        <i class="fa-brands fa-telegram"></i> Create Like This Link
-      </a>
-      
-      <a onclick="shareButton()" class="btn btn-danger w-100 mb-3" style="border: none; background-color: {{ jisshu_colours.share.background }}; color: {{ jisshu_colours.share.color }};">
-        <i class="fa fa-share-alt"></i> Share Now
-      </a>
-      
-      <div class="card bg-dark text-light border-secondary mb-4" style="background-color: {{ jisshu_colours.file_information.background }}  !important; color: {{ jisshu_colours.file_information.color }}  !important;">
-        <div class="card-header border-secondary">
-          <h5 class="mb-0"><i class="fa-solid fa-circle-info me-2"></i> File Information</h5>
-        </div>
-        <div class="card-body">
-          <div class="row">
-            <div class="col-md-6">
-              <p><strong>Name: </strong>{{file_name}}</p>
-              <p><strong>Size: </strong>{{file_size}}</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <div class="alert alert-warning" style="background-color: {{ jisshu_colours.description.background }}; color: {{ jisshu_colours.description.color }};">
-        <h6 class="fw-bold"><i class="fa-solid fa-triangle-exclamation me-2"></i> Disclaimer</h6>
-        <p class="mb-0">{{jisshu_disclaimer}}</p>
-        <div class="button-container">
-          <a href="{{jisshu_report_link}}" class="report">Report</a>
-        </div>
+          </a
       </div>
   </div>
   </main>
