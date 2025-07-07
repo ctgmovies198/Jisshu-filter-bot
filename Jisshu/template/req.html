@@ -16,33 +16,6 @@
 </head>
       </div>
     </header>
-    
-    <!-- Main content -->
-    <main class="flex-grow-1 container py-3">
-      <div class="player-wrapper mb-3">
-        <video id="myVideo" src="{{file_url}}" class="w-100" controls>
-          Your browser does not support the video tag.
-        </video>
-        <script src="https://cdn.plyr.io/3.6.12/plyr.js"></script>
-      </div>
-      
-      <div class="row g-3 mb-2">
-        <div class="col-md-6">
-          <a onclick="streamDownload()" class="btn btn-success w-100" style="border: none; background-color: {{ jisshu_colours.download.background }}; color: {{ jisshu_colours.download.color }};">
-            <i class="fa-solid fa-download me-2"></i> Download
-          </a
-      </div>
-  </div>
-  </main>
-  <!-- Footer is now generated via JavaScript -->
-  </div>
-  
-  <!-- External JS -->
-  <script src="https://developer-six-dusky.vercel.app/548/551/play.js"></script>
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      console.log("JS Loaded Successfully");
-    });
   </script>
 </body>
 
