@@ -27,7 +27,7 @@ ADMINS = [
     for admin in environ.get("ADMINS", "7525127704").split()
 ]
 OWNER_USERNAME = environ.get(
-    "OWNER_USERNAME", "IM_JISSHU"
+    "OWNER_USERNAME", "YABOTZ_BOT"
 )  # without @ or https://t.me/
 USERNAME = environ.get("USERNAME", "YABOTZ_BOT")  # ADMIN USERNAME
 
@@ -68,26 +68,26 @@ SUPPORT_CHAT = environ.get("SUPPORT_CHAT", "https://t.me/YABOTZ_BOT")
 MOVIE_GROUP_LINK = environ.get("MOVIE_GROUP_LINK", "https://t.me/MovieChannel_BD")
 
 # Verification
-IS_VERIFY = is_enabled("IS_VERIFY", False)
+IS_VERIFY = is_enabled("IS_VERIFY", Trur)
 # ---------------------------------------------------------------
-TUTORIAL = environ.get("TUTORIAL", "https://t.me/")
-TUTORIAL_2 = environ.get("TUTORIAL_2", "https://t.me/")
-TUTORIAL_3 = environ.get("TUTORIAL_3", "https://t.me/")
+TUTORIAL = environ.get("TUTORIAL", "https://t.me/yamovieflixdownload/13")
+TUTORIAL_2 = environ.get("TUTORIAL_2", "https://t.me/yamovieflixdownload/13")
+TUTORIAL_3 = environ.get("TUTORIAL_3", "https://t.me/yamovieflixdownload/13")
 VERIFY_IMG = environ.get(
     "VERIFY_IMG", "https://graph.org/file/1669ab9af68eaa62c3ca4.jpg"
 )
-SHORTENER_API = environ.get("SHORTENER_API", "3097623f852197a9ce40d1212aaa8bbf2803e799")
-SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", "omegalinks.in")
+SHORTENER_API = environ.get("SHORTENER_API", "aa13b16ab9299d129e56b6f6a8335374fd8cb188")
+SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", "droplink.co")
 SHORTENER_API2 = environ.get(
-    "SHORTENER_API2", "3097623f852197a9ce40d1212aaa8bbf2803e799"
+    "SHORTENER_API2", "aa13b16ab9299d129e56b6f6a8335374fd8cb188"
 )
-SHORTENER_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", "omegalinks.in")
+SHORTENER_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", "droplink.co")
 SHORTENER_API3 = environ.get(
-    "SHORTENER_API3", "3097623f852197a9ce40d1212aaa8bbf2803e799"
+    "SHORTENER_API3", "aa13b16ab9299d129e56b6f6a8335374fd8cb188"
 )
-SHORTENER_WEBSITE3 = environ.get("SHORTENER_WEBSITE3", "omegalinks.in")
-TWO_VERIFY_GAP = int(environ.get("TWO_VERIFY_GAP", "14400"))
-THREE_VERIFY_GAP = int(environ.get("THREE_VERIFY_GAP", "14400"))
+SHORTENER_WEBSITE3 = environ.get("SHORTENER_WEBSITE3", "droplink.co")
+TWO_VERIFY_GAP = int(environ.get("TWO_VERIFY_GAP", "600"))
+THREE_VERIFY_GAP = int(environ.get("THREE_VERIFY_GAP", "600"))
 
 # Language & Quality & Season & Year
 LANGUAGES = [
@@ -157,11 +157,11 @@ DELETE_TIME = int(environ.get("DELETE_TIME", 1200))
 IMDB = is_enabled("IMDB", False)
 FILE_CAPTION = environ.get("FILE_CAPTION", f"{script.FILE_CAPTION}")
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", f"{script.IMDB_TEMPLATE_TXT}")
-LONG_IMDB_DESCRIPTION = is_enabled("LONG_IMDB_DESCRIPTION", False)
+LONG_IMDB_DESCRIPTION = is_enabled("LONG_IMDB_DESCRIPTION", True)
 PROTECT_CONTENT = is_enabled("PROTECT_CONTENT", False)
 SPELL_CHECK = is_enabled("SPELL_CHECK", True)
 LINK_MODE = is_enabled("LINK_MODE", True)
-TMDB_API_KEY = environ.get("TMDB_API_KEY", "")
+TMDB_API_KEY = environ.get("TMDB_API_KEY", "275aff9f1c570308fa10d14c6f49f998")
 
 # Online Streaming And Download
 STREAM_MODE = bool(environ.get("STREAM_MODE", True))  # Set True or Flase
